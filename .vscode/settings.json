@@ -1,5 +1,11 @@
 {
     "files.associations": {
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "iosfwd": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp"
     }
 }
