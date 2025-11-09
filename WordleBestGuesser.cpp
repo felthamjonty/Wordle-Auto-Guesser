@@ -63,15 +63,30 @@ int main(){
 
     //-----------------------------------------------------------------
     
+    string knownLetters="-----";
+    unordered_map<char, int> voidLetters={};
+    
     string myWord="banne";
     string myGuess="00002";
 
-    string wordLine = "apple";
-    bool Acceptable = false;
-    for(int i=0; i<wordLine.length(); i++){
-        /* code */
+    for(int i=0; i<myWord.length(); i++){
+        if(knownLetters[i]=='-'){
+            if(myGuess[i]=='2'){
+                knownLetters[i]=myWord[i];
+            }
+        }
     }
-    
+
+    string wordLine = "apple";
+    bool acceptable = true;
+    for(int i=0; i<wordLine.length(); i++){
+        if(knownLetters[i]!='-'&&knownLetters[i]!=wordLine[i]){
+            acceptable=false;
+            break;
+        }
+    }
+
+    cout<<acceptable;
 
     return 0;
 }
