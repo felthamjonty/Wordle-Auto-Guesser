@@ -6,6 +6,12 @@
         "string": "cpp",
         "unordered_map": "cpp",
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "fstream": "cpp",
+        "array": "cpp",
+        "format": "cpp",
+        "initializer_list": "cpp",
+        "span": "cpp",
+        "text_encoding": "cpp"
     }
 }
