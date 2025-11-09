@@ -128,7 +128,7 @@ int main(){
                         if (acceptable){
                             string alph = "abcdefghijklmnopqrstuvwxyz";
                             for (int i = 0; i<alph.length(); i++){
-                                if(shuffledLetters.find(alph[i])!=shuffledLetters.end()){
+                                if(shuffledLetters.find(alph[i])!=shuffledLetters.end()&&shuffledLetters[alph[i]].size()>0){
                                     bool letterFound=false;
                                     for(int ii=0; ii<curLine.length(); ii++){
                                         if(curLine[ii]==alph[i]){
