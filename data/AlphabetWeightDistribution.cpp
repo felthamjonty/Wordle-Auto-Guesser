@@ -10,7 +10,7 @@ int main(){
     };
 
     ifstream myfile;
-    myfile.open ("valid-wordle-words.txt");
+    myfile.open ("valid-wordsAdjusted.txt");
     if(myfile.is_open()){
         string curLine;
         int numLine=1;

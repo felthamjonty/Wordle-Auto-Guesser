@@ -82,7 +82,7 @@ int main(){
             vector<string> bestWord = {};
 
             ifstream myfile;
-            myfile.open ("valid-wordle-words.txt",ios::in);
+            myfile.open ("valid-wordsAdjusted.txt",ios::in);
             if(myfile.is_open()){
                 string curLine;
                 while (getline(myfile,curLine)){

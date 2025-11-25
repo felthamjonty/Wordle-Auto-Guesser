@@ -6,11 +6,11 @@ using namespace std;
 
 int main(){
     unordered_map<char, int> commonLetters = {
-        {'a',7128},{'b',1849},{'c',2246},{'d',2735},{'e',7455},{'f',1240},{'g',1864},{'h',1993},{'i',4381},{'j',342},{'k',1753},{'l',3780},{'m',2414},{'n',3478},{'o',5212},{'p',2436},{'q',145},{'r',4714},{'s',7319},{'t',3707},{'u',2927},{'v',801},{'w',1127},{'x',326},{'y',2400},{'z',503}
+        {'a',6415},{'b',1659},{'c',1920},{'d',2458},{'e',6572},{'f',1079},{'g',1643},{'h',1700},{'i',3922},{'j',323},{'k',1610},{'l',3278},{'m',2195},{'n',3068},{'o',4662},{'p',2188},{'q',123},{'r',4078},{'s',6881},{'t',3165},{'u',2613},{'v',693},{'w',996},{'x',295},{'y',2140},{'z',474}
     };
 
     ifstream myfile;
-    myfile.open ("valid-wordle-words.txt",ios::in);
+    myfile.open ("valid-wordsAdjusted.txt",ios::in);
     ofstream writeTo;
     writeTo.open ("weighted-wordle-words.txt",ios::out);
     if(myfile.is_open()&&writeTo.is_open()){
